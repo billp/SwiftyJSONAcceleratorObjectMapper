@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 // Helper methods for JSON.
 extension JSON {

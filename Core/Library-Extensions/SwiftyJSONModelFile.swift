@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 /**
  *  Provides support for SwiftyJSON library.
