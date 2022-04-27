@@ -24,7 +24,7 @@ struct FileGenerator {
 
         do {
             let content = try String.init(contentsOfFile: path!)
-            return content
+            return content.replacingOccurrences(of: "\\s*$", with: "", options: .regularExpression)
         } catch { }
 
         return ""

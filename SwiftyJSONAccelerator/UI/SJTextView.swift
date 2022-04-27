@@ -31,7 +31,7 @@ class SJTextView: NSTextView {
 
   internal func updateFormat() {
     textStorage?.font = NSFont(name: "Menlo", size: 12)
-    self.textColor = NSColor.white
+    self.textColor = NSColor.black
   }
 
   override func paste(_ sender: Any?) {

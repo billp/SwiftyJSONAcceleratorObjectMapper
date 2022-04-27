@@ -84,13 +84,13 @@ struct ObjectMapperModelFile: ModelFile, DefaultModelFileComponent {
 
     fileprivate mutating func generateCommonComponentsFor(_ property: PropertyComponent) {
         component.stringConstants.append(genStringConstant(property.constantName, property.key))
-        component.initialisers.append(genInitializerForVariable(property.name, property.constantName))
+        component.initialisers.append(genInitializerForVariable(property.name, property.key))
     }
 
     // MARK: - Customised methods for ObjectMapper
     // MARK: - Initialisers
     func genInitializerForVariable(_ name: String, _ constantName: String) -> String {
-        return "\(name) <- map[\(constantName)]"
+        return "\(name) <- map[\"\(constantName)\"]"
     }
 
 }

@@ -52,6 +52,7 @@ class SJEditorViewController: NSViewController, NSTextViewDelegate {
         textView!.lnv_setUpLineNumberView()
         resetErrorImage()
         authorNameTextField?.stringValue = NSFullUserName()
+        
     }
 
     // MARK: Actions
@@ -128,12 +129,12 @@ class SJEditorViewController: NSViewController, NSTextViewDelegate {
 
         // The base class field is blank, cannot proceed without it.
         // Possibly can have a default value in the future.
-        if baseClassTextField?.stringValue.count <= 0 {
-            let alert = NSAlert()
-            alert.messageText = "Enter a base class name to continue."
-            alert.runModal()
-            return
-        }
+//        if baseClassTextField?.stringValue.count <= 0 {
+//            let alert = NSAlert()
+//            alert.messageText = "Enter a base class name to continue."
+//            alert.runModal()
+//            return
+//        }
 
         let filePath = openFile()
 

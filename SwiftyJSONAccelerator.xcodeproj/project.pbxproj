@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2321345E2819684A00633CA2 /* Pods_SwiftyJSONAccelerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252E34F85AD642449898FC7 /* Pods_SwiftyJSONAccelerator.framework */; };
+		2C5580B3E7D198833E39D5FC /* Pods_SwiftyJSONAcceleratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACF57B2C1165973888ED027 /* Pods_SwiftyJSONAcceleratorTests.framework */; };
 		930462AD1D3106A400FE61A6 /* FileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930462AC1D3106A400FE61A6 /* FileGenerator.swift */; };
 		930462B01D310F6900FE61A6 /* ModelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930462AF1D310F6900FE61A6 /* ModelComponent.swift */; };
 		930462B21D310FF200FE61A6 /* PropertyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930462B11D310FF200FE61A6 /* PropertyComponent.swift */; };
@@ -124,6 +126,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12898E191705EB794DF8CDAB /* Pods-SwiftyJSONAcceleratorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJSONAcceleratorTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyJSONAcceleratorTests/Pods-SwiftyJSONAcceleratorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E118FAF3A81EF56D4228CF0 /* Pods-SwiftyJSONAccelerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJSONAccelerator.release.xcconfig"; path = "Target Support Files/Pods-SwiftyJSONAccelerator/Pods-SwiftyJSONAccelerator.release.xcconfig"; sourceTree = "<group>"; };
+		3ACF57B2C1165973888ED027 /* Pods_SwiftyJSONAcceleratorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyJSONAcceleratorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5252E34F85AD642449898FC7 /* Pods_SwiftyJSONAccelerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyJSONAccelerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8232E339D0D065E31F067FDA /* Pods-SwiftyJSONAccelerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJSONAccelerator.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyJSONAccelerator/Pods-SwiftyJSONAccelerator.debug.xcconfig"; sourceTree = "<group>"; };
 		930462AC1D3106A400FE61A6 /* FileGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileGenerator.swift; sourceTree = "<group>"; };
 		930462AF1D310F6900FE61A6 /* ModelComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelComponent.swift; sourceTree = "<group>"; };
 		930462B11D310FF200FE61A6 /* PropertyComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyComponent.swift; sourceTree = "<group>"; };
@@ -190,6 +197,7 @@
 		C667011A1BDCABCE009BA254 /* SwiftyJSONTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftyJSONTemplate.txt; sourceTree = "<group>"; };
 		C667011C1BDCAF23009BA254 /* ObjectMapperTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjectMapperTemplate.txt; sourceTree = "<group>"; };
 		C667011E1BDCBE1F009BA254 /* NSCodingTemplate.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NSCodingTemplate.txt; sourceTree = "<group>"; };
+		FF12C47A8A40A0804A2FC440 /* Pods-SwiftyJSONAcceleratorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyJSONAcceleratorTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftyJSONAcceleratorTests/Pods-SwiftyJSONAcceleratorTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2321345E2819684A00633CA2 /* Pods_SwiftyJSONAccelerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93E0F12622E8674D008D3B16 /* Nimble.framework in Frameworks */,
+				2C5580B3E7D198833E39D5FC /* Pods_SwiftyJSONAcceleratorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +363,8 @@
 			children = (
 				93E0F12522E8674D008D3B16 /* Nimble.framework */,
 				937245571E12EE37005387E8 /* Nimble.framework */,
+				5252E34F85AD642449898FC7 /* Pods_SwiftyJSONAccelerator.framework */,
+				3ACF57B2C1165973888ED027 /* Pods_SwiftyJSONAcceleratorTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -418,6 +430,7 @@
 				93F174411BD0707D007E7DFC /* SwiftyJSONAccelerator */,
 				933CF3941E11699700F9C412 /* SwiftyJSONAccelerator-CLI */,
 				93F174531BD0707D007E7DFC /* SwiftyJSONAcceleratorTests */,
+				B488F55A1BC9F7DBEF2F2C11 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -467,6 +480,17 @@
 			path = "Library-Extension-Templates";
 			sourceTree = "<group>";
 		};
+		B488F55A1BC9F7DBEF2F2C11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8232E339D0D065E31F067FDA /* Pods-SwiftyJSONAccelerator.debug.xcconfig */,
+				1E118FAF3A81EF56D4228CF0 /* Pods-SwiftyJSONAccelerator.release.xcconfig */,
+				12898E191705EB794DF8CDAB /* Pods-SwiftyJSONAcceleratorTests.debug.xcconfig */,
+				FF12C47A8A40A0804A2FC440 /* Pods-SwiftyJSONAcceleratorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -490,10 +514,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93F174591BD0707D007E7DFC /* Build configuration list for PBXNativeTarget "SwiftyJSONAccelerator" */;
 			buildPhases = (
+				550A0FEA6F3D072473C85593 /* [CP] Check Pods Manifest.lock */,
 				93F1743B1BD0707D007E7DFC /* Sources */,
 				93F1743C1BD0707D007E7DFC /* Frameworks */,
 				93F1743D1BD0707D007E7DFC /* Resources */,
 				930462B91D311F9100FE61A6 /* SwiftLint */,
+				7C6294181DC521016E6A0755 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -508,9 +534,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93F1745C1BD0707D007E7DFC /* Build configuration list for PBXNativeTarget "SwiftyJSONAcceleratorTests" */;
 			buildPhases = (
+				4073958513513E711D781932 /* [CP] Check Pods Manifest.lock */,
 				93F1744C1BD0707D007E7DFC /* Sources */,
 				93F1744D1BD0707D007E7DFC /* Frameworks */,
 				93F1744E1BD0707D007E7DFC /* Resources */,
+				BE3D96C5149F9FA725F2DE74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -539,7 +567,7 @@
 					};
 					93F1743E1BD0707D007E7DFC = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = UYGU8PDBPS;
+						DevelopmentTeam = 899S8YHUCE;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -608,6 +636,68 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4073958513513E711D781932 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyJSONAcceleratorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		550A0FEA6F3D072473C85593 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftyJSONAccelerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C6294181DC521016E6A0755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyJSONAccelerator/Pods-SwiftyJSONAccelerator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyJSONAccelerator/Pods-SwiftyJSONAccelerator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		930462B91D311F9100FE61A6 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -621,6 +711,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		BE3D96C5149F9FA725F2DE74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftyJSONAcceleratorTests/Pods-SwiftyJSONAcceleratorTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftyJSONAcceleratorTests/Pods-SwiftyJSONAcceleratorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -865,16 +975,16 @@
 		};
 		93F1745A1BD0707D007E7DFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8232E339D0D065E31F067FDA /* Pods-SwiftyJSONAccelerator.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = UYGU8PDBPS;
+				DEVELOPMENT_TEAM = 899S8YHUCE;
 				INFOPLIST_FILE = SwiftyJSONAccelerator/Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.SwiftyJSONAccelerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthssk.SwiftyJSONAccelerator;
 				PRODUCT_NAME = SwiftyJSONAccelerator;
 				SWIFT_VERSION = 5.0;
 			};
@@ -882,8 +992,8 @@
 		};
 		93F1745B1BD0707D007E7DFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E118FAF3A81EF56D4228CF0 /* Pods-SwiftyJSONAccelerator.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -899,6 +1009,7 @@
 		};
 		93F1745D1BD0707D007E7DFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12898E191705EB794DF8CDAB /* Pods-SwiftyJSONAcceleratorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -915,6 +1026,7 @@
 		};
 		93F1745E1BD0707D007E7DFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF12C47A8A40A0804A2FC440 /* Pods-SwiftyJSONAcceleratorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

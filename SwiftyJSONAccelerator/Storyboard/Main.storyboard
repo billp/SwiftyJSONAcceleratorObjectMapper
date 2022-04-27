@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XfG-lQ-9wD">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XfG-lQ-9wD">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -320,15 +320,15 @@
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-Tp-PPn">
                                 <rect key="frame" x="0.0" y="0.0" width="660" height="485"/>
                                 <clipView key="contentView" id="V7d-R1-cDN">
-                                    <rect key="frame" x="0.0" y="0.0" width="660" height="485"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="645" height="485"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="fWl-7Q-Cq6" customClass="SJTextView" customModule="SwiftyJSONAccelerator" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="660" height="485"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="645" height="485"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="660" height="485"/>
+                                            <size key="minSize" width="645" height="485"/>
                                             <size key="maxSize" width="717" height="10000000"/>
                                             <color key="insertionPointColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -340,7 +340,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="9fh-RH-upi">
-                                    <rect key="frame" x="644" y="0.0" width="16" height="485"/>
+                                    <rect key="frame" x="645" y="0.0" width="15" height="485"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -380,13 +380,13 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <popUpButton verticalHuggingPriority="750" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5l-Lv-rfg">
-                                <rect key="frame" x="677" y="280" width="306" height="34"/>
+                            <popUpButton verticalHuggingPriority="750" tag="2" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r5l-Lv-rfg">
+                                <rect key="frame" x="677" y="279" width="307" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0Cw-YA-tIQ"/>
                                     <constraint firstAttribute="width" constant="300" id="N8Q-JY-Uf6"/>
                                 </constraints>
-                                <popUpButtonCell key="cell" type="push" title="SwiftyJSON (Default)" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="border" imageScaling="proportionallyDown" inset="2" pullsDown="YES" autoenablesItems="NO" selectedItem="0QP-u9-O6V" id="l4o-yX-zdG">
+                                <popUpButtonCell key="cell" type="push" title="SwiftyJSON (Default)" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="border" imageScaling="proportionallyDown" inset="2" pullsDown="YES" autoenablesItems="NO" selectedItem="FPc-o9-hXy" id="l4o-yX-zdG">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
                                     <menu key="menu" autoenablesItems="NO" id="QJi-PT-im1">
@@ -403,7 +403,7 @@
                                 </connections>
                             </popUpButton>
                             <segmentedControl focusRingType="exterior" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZUC-Iy-7fC">
-                                <rect key="frame" x="680" y="244" width="300" height="31"/>
+                                <rect key="frame" x="679" y="243" width="302" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="brA-z6-6xJ"/>
                                     <constraint firstAttribute="height" constant="30" id="qo1-6g-bOK"/>
@@ -420,7 +420,7 @@
                                 </connections>
                             </segmentedControl>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="LPu-t9-bJY">
-                                <rect key="frame" x="678" y="198" width="304" height="29"/>
+                                <rect key="frame" x="678" y="199" width="302" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="4C1-Zk-yKx"/>
                                     <constraint firstAttribute="width" constant="300" id="4QF-2W-XHh"/>
@@ -431,18 +431,18 @@
                                 </buttonCell>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="ZXf-O8-Z1c">
-                                <rect key="frame" x="678" y="132" width="304" height="29"/>
+                                <rect key="frame" x="678" y="133" width="302" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="1y2-iZ-jTg"/>
                                     <constraint firstAttribute="width" constant="300" id="RD4-tS-IJU"/>
                                 </constraints>
-                                <buttonCell key="cell" type="check" title="Support NSCoding" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="X76-Zb-p14">
+                                <buttonCell key="cell" type="check" title="Support NSCoding" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="X76-Zb-p14">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="DR0-oc-DGs">
-                                <rect key="frame" x="678" y="165" width="304" height="29"/>
+                                <rect key="frame" x="678" y="166" width="302" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="3IQ-Oz-1Et"/>
                                     <constraint firstAttribute="width" constant="300" id="tvi-KY-YU1"/>
@@ -465,7 +465,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AwX-MF-DMD">
-                                <rect key="frame" x="674" y="85" width="312" height="41"/>
+                                <rect key="frame" x="673" y="85" width="314" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="N93-Id-Xdf"/>
                                     <constraint firstAttribute="height" constant="30" id="qkJ-Tk-S9V"/>
@@ -490,7 +490,7 @@
                                 </connections>
                             </button>
                             <imageView translatesAutoresizingMaskIntoConstraints="NO" id="PJA-AP-s5I">
-                                <rect key="frame" x="609" y="16" width="35" height="35"/>
+                                <rect key="frame" x="594" y="16" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="aa1-My-IFd"/>
                                     <constraint firstAttribute="height" constant="35" id="r0w-v9-b89"/>
@@ -501,7 +501,7 @@
                                 <rect key="frame" x="680" y="79" width="300" height="5"/>
                             </box>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SnH-nC-2b8">
-                                <rect key="frame" x="674" y="35" width="312" height="41"/>
+                                <rect key="frame" x="673" y="35" width="314" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="8ph-9n-dru"/>
                                     <constraint firstAttribute="height" constant="30" id="iS5-BJ-kGh"/>

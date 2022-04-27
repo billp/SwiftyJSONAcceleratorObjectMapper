@@ -13,16 +13,19 @@ extension FileGenerator {
     static func generateFileContentWith(_ modelFile: ModelFile, configuration: ModelGenerationConfiguration) -> String {
 
         var content = loadFileWith("BaseTemplate")
-        let singleTab = "  ", doubleTab = "    "
+        let year = Calendar.current.component(.year, from: Date())
+        
+        let singleTab = "\t", doubleTab = "\t\t"
+        content = content.replacingOccurrences(of: "{YEAR}", with: String(year))
         content = content.replacingOccurrences(of: "{OBJECT_NAME}", with: modelFile.fileName)
         content = content.replacingOccurrences(of: "{DATE}", with: todayDateString())
         content = content.replacingOccurrences(of: "{OBJECT_KIND}", with: modelFile.type.rawValue)
         content = content.replacingOccurrences(of: "{JSON_PARSER_LIBRARY_BODY}", with: loadFileWith(modelFile.mainBodyTemplateFileName()))
 
         if modelFile.type == .classType {
-            content = content.replacingOccurrences(of: "{REQUIRED}", with: " required ")
+            content = content.replacingOccurrences(of: "{REQUIRED}", with: "required ")
         } else {
-            content = content.replacingOccurrences(of: "{REQUIRED}", with: " ")
+            content = content.replacingOccurrences(of: "{REQUIRED}", with: "")
         }
         if let authorName = configuration.authorName {
             content = content.replacingOccurrences(of: "__NAME__", with: authorName)
@@ -45,9 +48,9 @@ extension FileGenerator {
         }
 
         if configuration.isFinalRequired && configuration.constructType == .classType {
-            content = content.replacingOccurrences(of: "{IS_FINAL}", with: " final ")
+            content = content.replacingOccurrences(of: "{IS_FINAL}", with: "final ")
         } else {
-            content = content.replacingOccurrences(of: "{IS_FINAL}", with: " ")
+            content = content.replacingOccurrences(of: "{IS_FINAL}", with: "")
         }
 
         if classesExtendFrom.count > 0 {

@@ -5,6 +5,6 @@
       location = "group:SwiftyJSONAccelerator.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Submodules/Nimble/Nimble.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
