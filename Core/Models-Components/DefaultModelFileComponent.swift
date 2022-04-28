@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import InflectorKit
 
 /**
  *  Protocol for default file component generation. It is the fall back if the library does not want to customise the methods.
@@ -124,7 +125,7 @@ extension DefaultModelFileComponent {
   func genVariableDeclaration(_ name: String, _ type: String, _ isArray: Bool) -> String {
     var _type = type
     if isArray {
-      _type = "[\(type)]"
+        _type = "[\(type.singularized)]"
     }
     return genPrimitiveVariableDeclaration(name, _type)
   }

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2321345E2819684A00633CA2 /* Pods_SwiftyJSONAccelerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252E34F85AD642449898FC7 /* Pods_SwiftyJSONAccelerator.framework */; };
+		23BFF153281A74460058BB81 /* InflectorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 23BFF152281A74460058BB81 /* InflectorKit */; };
 		2C5580B3E7D198833E39D5FC /* Pods_SwiftyJSONAcceleratorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACF57B2C1165973888ED027 /* Pods_SwiftyJSONAcceleratorTests.framework */; };
 		930462AD1D3106A400FE61A6 /* FileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930462AC1D3106A400FE61A6 /* FileGenerator.swift */; };
 		930462B01D310F6900FE61A6 /* ModelComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930462AF1D310F6900FE61A6 /* ModelComponent.swift */; };
@@ -211,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BFF153281A74460058BB81 /* InflectorKit in Frameworks */,
 				2321345E2819684A00633CA2 /* Pods_SwiftyJSONAccelerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +527,9 @@
 			dependencies = (
 			);
 			name = SwiftyJSONAccelerator;
+			packageProductDependencies = (
+				23BFF152281A74460058BB81 /* InflectorKit */,
+			);
 			productName = SwifyJSONAccelerator;
 			productReference = 93F1743F1BD0707D007E7DFC /* SwiftyJSONAccelerator.app */;
 			productType = "com.apple.product-type.application";
@@ -588,6 +593,9 @@
 				Base,
 			);
 			mainGroup = 93F174361BD0707D007E7DFC;
+			packageReferences = (
+				23BFF151281A74460058BB81 /* XCRemoteSwiftPackageReference "InflectorKit" */,
+			);
 			productRefGroup = 93F174401BD0707D007E7DFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -858,7 +866,12 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = UYGU8PDBPS;
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks' @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"'@executable_path/../Frameworks'",
+					"'@loader_path/Frameworks'",
+					"@executable_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -873,7 +886,12 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = UYGU8PDBPS;
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) '@executable_path/../Frameworks' '@loader_path/Frameworks' @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"'@executable_path/../Frameworks'",
+					"'@loader_path/Frameworks'",
+					"@executable_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -966,7 +984,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -980,7 +999,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 899S8YHUCE;
 				INFOPLIST_FILE = SwiftyJSONAccelerator/Support/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karthssk.SwiftyJSONAccelerator;
 				PRODUCT_NAME = SwiftyJSONAccelerator;
@@ -997,7 +1019,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = UYGU8PDBPS;
 				INFOPLIST_FILE = SwiftyJSONAccelerator/Support/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.SwiftyJSONAccelerator;
 				PRODUCT_NAME = SwiftyJSONAccelerator;
@@ -1014,7 +1039,11 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "SwiftyJSONAcceleratorTests/Support Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.SwiftyJSONAcceleratorTests;
 				PRODUCT_NAME = SwiftyJSONAccelerator;
 				SWIFT_VERSION = 5.0;
@@ -1031,7 +1060,11 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "SwiftyJSONAcceleratorTests/Support Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.SwiftyJSONAcceleratorTests;
 				PRODUCT_NAME = SwiftyJSONAccelerator;
 				SWIFT_VERSION = 5.0;
@@ -1079,6 +1112,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23BFF151281A74460058BB81 /* XCRemoteSwiftPackageReference "InflectorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattt/InflectorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23BFF152281A74460058BB81 /* InflectorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23BFF151281A74460058BB81 /* XCRemoteSwiftPackageReference "InflectorKit" */;
+			productName = InflectorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93F174371BD0707D007E7DFC /* Project object */;
 }

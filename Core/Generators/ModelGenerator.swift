@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import InflectorKit
 
 /// Model generator responsible for creation of models based on the JSON, needs to be initialised
 /// with all properties before proceeding.
@@ -46,9 +47,9 @@ public struct ModelGenerator {
 
    - returns: Model files for the current object and sub objects.
    */
-    func generateModelForJSON(_ object: JSON, _ defaultClassName: String, _ isTopLevelObject: Bool) -> [ModelFile] {
+    func generateModelForJSON(_ object: JSON, _ defaultClassName: String, singularizeClass: Bool = false, _ isTopLevelObject: Bool) -> [ModelFile] {
 
-        let className = NameGenerator.fixClassName(defaultClassName, self.configuration.prefix, isTopLevelObject)
+        let className = NameGenerator.fixClassName(defaultClassName, self.configuration.prefix, singularizeClass: singularizeClass, isTopLevelObject)
         var modelFiles: [ModelFile] = []
 
         // Incase the object was NOT a dictionary. (this would only happen in case of the top level
@@ -83,7 +84,7 @@ public struct ModelGenerator {
                     } else {
                         let subClassType = value.arrayValue.first!.detailedValueType()
                         if subClassType == .object {
-                            let models = generateModelForJSON(JSONHelper.reduce(value.arrayValue), variableName, false)
+                            let models = generateModelForJSON(JSONHelper.reduce(value.arrayValue), variableName, singularizeClass: true, false)
                             modelFiles += models
                             let model = models.first
                             let classname = model?.fileName

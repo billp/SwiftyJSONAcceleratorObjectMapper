@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import InflectorKit
 
 /**
  *  A structure to store the various kinds of string name generation functions for classes and variables.
@@ -23,11 +24,14 @@ struct NameGenerator {
 
    - returns: A generated string representing the name of the class in the model.
    */
-  static func fixClassName(_ className: String, _ prefix: String?, _ isTopLevelObject: Bool)
+    static func fixClassName(_ className: String, _ prefix: String?, singularizeClass: Bool = false, _ isTopLevelObject: Bool)
     -> String {
 
       // If it is not a top level object, it is already formatted (since it is a property)
       var formattedClassName = isTopLevelObject ? fixVariableName(className) : className
+        if singularizeClass {
+            formattedClassName = formattedClassName.singularized
+        }
       formattedClassName.uppercaseFirst()
       formattedClassName.appendPrefix(prefix)
       return formattedClassName
